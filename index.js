@@ -44,6 +44,32 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "usage",
+    message: "What is the usage information?",
+    validate: (input) => {
+      if (input) {
+        return true;
+      } else {
+        console.log("Please enter usage information");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "contribution",
+    message: "What are the contribution guidelines?",
+    validate: (input) => {
+      if (input) {
+        return true;
+      } else {
+        console.log("Please enter guidelines");
+        return false;
+      }
+    },
+  },
 ];
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
