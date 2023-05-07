@@ -18,6 +18,32 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "description",
+    message: "What is the project description?",
+    validate: (input) => {
+      if (input) {
+        return true;
+      } else {
+        console.log("Please enter a description");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "installation",
+    message: "What are the installation instructions?",
+    validate: (input) => {
+      if (input) {
+        return true;
+      } else {
+        console.log("Please enter instructions");
+        return false;
+      }
+    },
+  },
 ];
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
