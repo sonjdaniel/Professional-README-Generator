@@ -70,6 +70,73 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "test",
+    message: "What are the test instructions?",
+    validate: (input) => {
+      if (input) {
+        return true;
+      } else {
+        console.log("Please enter a instructions");
+        return false;
+      }
+    },
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Which license would you like to use?",
+    choices: ["MIT", "ISC", "Zlib", "None"],
+    validate: (input) => {
+      if (input) {
+        return true;
+      } else {
+        console.log("Please enter a value");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "github",
+    message: "What is your GitHub username?",
+    validate: (input) => {
+      if (input) {
+        return true;
+      } else {
+        console.log("Please enter a username");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email address?",
+    validate: (input) => {
+      if (input) {
+        return true;
+      } else {
+        console.log("Please enter an email address");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "fileName",
+    message:
+      "Where would you like your README file saved? Include file path and file name:",
+    validate: (input) => {
+      if (input) {
+        return true;
+      } else {
+        console.log("Please enter a file path");
+        return false;
+      }
+    },
+  },
 ];
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
