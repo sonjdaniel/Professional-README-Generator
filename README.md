@@ -29,4 +29,4 @@ n/a
 ## Walkthrough Video
 
 [Link to the walkthrough video](https://drive.google.com/file/d/1zLjheBZVWwmG8wXUa23QoUYTtd5WFh_K/view?usp=sharing)<br><br>
-<kbd>![README-Generator](./result/README_Recording.gif)</kbd>
+<kbd>![README-Generator](./result/README_Recording2.gif)</kbd>
