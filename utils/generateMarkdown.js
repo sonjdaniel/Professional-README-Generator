@@ -10,8 +10,6 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license == "None") {
     return ``;
@@ -20,8 +18,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// function that returns the license section of README
 function renderLicenseSection(license) {
   if (license == "None") {
     return ``;
@@ -31,10 +28,11 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(answers) {
   fileName = answers.fileName;
   return `# ${answers.title}
+  
 
   ${renderLicenseBadge(answers.license)}
 

@@ -3,7 +3,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// Create an array of questions for user input. Template for the questions.
+// an array of questions for user input, aka the questions object from the inquirer package that will be prompted with the init function below
 const questions = [
   {
     type: "input",
@@ -138,14 +138,15 @@ const questions = [
     },
   },
 ];
-//Create a function to write README file
-function writeToFile(fileName, data) {
+
+// function to write README file
+function writeToFile(data) {
   fs.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log("Your README has been created")
   );
 }
 
-// Create a function to initialize app
+// function to initialize app
 function init() {
   inquirer
     .prompt(questions)
@@ -161,4 +162,5 @@ function init() {
 }
 
 // Function call to initialize app
+
 init();
