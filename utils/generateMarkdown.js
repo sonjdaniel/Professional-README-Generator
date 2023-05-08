@@ -36,6 +36,35 @@ function generateMarkdown(answers) {
   fileName = answers.fileName;
   return `# ${answers.title}
 
+  ${renderLicenseBadge(answers.license)}
+
+
+## Description
+${answers.description}
+
+
+
+## Table of Contents
+${renderLicenseTOC(answers.license)}
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+${renderLicenseSection(answers.license)}
+
+## Contributing
+${answers.contribution}
+
+## Tests
+${answers.test}
+
+## Questions
+If you have any questions, please contact me at ${
+    answers.email
+  } or view my projects at ${answers.github}.
 `;
 }
 
